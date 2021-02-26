@@ -3,20 +3,53 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.6.1",
-    "react-dom": "^16.6.1",
-    "react-scripts": "2.1.1"
+    "@babel/core": "^7.13.1",
+    "@fortawesome/fontawesome-free": "5.14.0",
+    "@popperjs/core": "2.5.1",
+    "@tailwindcss/custom-forms": "0.2.1",
+    "babel": "^6.23.0",
+    "chart.js": "2.9.3",
+    "gsap": "^3.6.0",
+    "gulp": "4.0.2",
+    "gulp-append-prepend": "1.0.8",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "react-fade-in": "^2.0.1",
+    "react-google-maps": "9.4.5",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0",
+    "react-scripts": "3.4.3",
+    "react-visibility-sensor": "^5.1.1",
+    "sass-loader": "^8.0.2",
+    "tailwindcss": "1.8.10",
+    "three": "^0.125.2",
+    "webfontloader": "^1.6.28"
   },
   "scripts": {
     "dev": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
+    "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
+    "start": "react-scripts start"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "optionalDependencies": {
+    "@types/googlemaps": "3.39.13",
+    "@types/markerclustererplus": "2.1.33",
+    "@types/react": "16.9.49",
+    "typescript": "^3.9.9"
+  }
 }
