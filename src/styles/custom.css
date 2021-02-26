@@ -1,0 +1,14 @@
+.opacity-60 {
+  opacity: 0.60;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+h1,
+h6,
+h2,
+h4.font-semibold,
+h6.font-semibold {
+  font-family: 'Russo One', sans-serif;
+  font-weight: 100;
+}
