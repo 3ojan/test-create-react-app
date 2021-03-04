@@ -12,6 +12,7 @@
     "gsap": "^3.6.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
+    "netlify-cli": "^3.10.5",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-fade-in": "^2.0.1",

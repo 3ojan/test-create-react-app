@@ -1,19 +1,19 @@
 import React, { useEffect, useState, useRef } from 'react';
 import * as THREE from "three";
-import image1 from 'assets/img/1.jpeg';
-import image2 from 'assets/img/2.jpeg';
-import image3 from 'assets/img/3.jpeg';
-import image4 from 'assets/img/4.jpeg';
-import image5 from 'assets/img/5.jpeg';
-import image6 from 'assets/img/6.jpeg';
+import image1 from 'assets/img/1.jpg';
+import image2 from 'assets/img/2.jpg';
+import image3 from 'assets/img/3.jpg';
+import image4 from 'assets/img/4.jpg';
+import image5 from 'assets/img/5.jpg';
+import image6 from 'assets/img/6.jpg';
 import transitionImage1 from 'assets/img/8-7.jpg';
 import transitionImage2 from 'assets/img/8-3.jpg';
 import transitionImage3 from 'assets/img/8-18.jpg';
-import transitionImage4 from 'assets/img/8-24.jpeg';
+import transitionImage4 from 'assets/img/8-24.jpg';
 import transitionImage5 from 'assets/img/8-30.jpg';
 import transitionImage6 from 'assets/img/8-36.png';
 import transitionImage7 from 'assets/img/8-19.jpg';
-import transitionImage8 from 'assets/img/8-38.jpeg';
+import transitionImage8 from 'assets/img/8-38.jpg';
 
 import gsap from 'gsap';
 import { start } from '@popperjs/core';
