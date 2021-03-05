@@ -27,7 +27,7 @@
     "webfontloader": "^1.6.28"
   },
   "scripts": {
-    "dev": "BROWSER=none react-scripts start --scripts-prepend-node-path=true",
+    "dev": "BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

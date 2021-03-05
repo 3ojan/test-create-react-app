@@ -28,10 +28,10 @@ export default function Landing() {
             }}
           >
             <ThreeLayer></ThreeLayer>
-            <span
+            {/* <span
               id="blackOverlay"
               className="w-full h-full absolute opacity-50 bg-black"
-            ></span>
+            ></span> */}
           </div>
           <FadeIn
             transitionDuration={3500}>
