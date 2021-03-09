@@ -17,19 +17,25 @@ import Landing from "views/Landing.js";
 import Profile from "views/Profile.js";
 import Index from "views/Index.js";
 
+import { Provider } from 'react-redux';
+import store from "./store/index";
+import { history } from './store';
+
 ReactDOM.render(
-  <BrowserRouter>
-    <Switch>
-      {/* add routes with layouts */}
-      <Route path="/admin" component={Admin} />
-      <Route path="/auth" component={Auth} />
-      {/* add routes without layouts */}
-      <Route path="/landing" exact component={Landing} />
-      <Route path="/profile" exact component={Profile} />
-      <Route path="/" exact component={Index} />
-      {/* add redirect for first page */}
-      <Redirect from="*" to="/" />
-    </Switch>
-  </BrowserRouter>,
+  <Provider store={store}>
+    <BrowserRouter history={history}>
+      <Switch>
+        {/* add routes with layouts */}
+        <Route exact path="/admin" component={Admin} />
+        <Route exact path="/auth" component={Auth} />
+        {/* add routes without layouts */}
+        <Route exact path="/landing" exact component={Landing} />
+        <Route exact path="/profile" exact component={Profile} />
+        <Route path="/" exact component={Index} />
+        {/* add redirect for first page */}
+        <Redirect from="*" to="/" />
+      </Switch>
+    </BrowserRouter>
+  </Provider>,
   document.getElementById("root")
 );

@@ -24,7 +24,11 @@
     "sass-loader": "^8.0.2",
     "tailwindcss": "1.8.10",
     "three": "^0.125.2",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "axios": "^0.20.0",
+    "redux": "^4.0.5",
+    "react-redux": "^7.2.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "dev": "BROWSER=none react-scripts start",
